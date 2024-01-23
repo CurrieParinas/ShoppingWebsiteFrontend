@@ -1,0 +1,240 @@
+@font-face {
+  font-family: RazerF5;
+  src: url(assets/RazerF5-Bold.otf);
+}
+@font-face {
+  font-family: Neue;
+  src: url(assets/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: Noto Sans;
+  src: url(assets/NotoSans-Regular.ttf);
+}
+.product {
+  padding: 20px 50px;
+  display: flex;
+  gap: 50px;
+  background-color: black;
+  color: white;
+  height: 900px;
+
+  .left {
+      margin-top: 20px;
+      flex: 1;
+      display: flex;
+      gap: 20px;
+
+      .images{
+          flex: 1;
+
+          img {
+              width: 100%;
+              height: 150px;
+              object-fit: cover;
+              cursor: pointer;
+              margin-bottom: 10px;
+          }
+      }
+      .mainImg {
+          flex: 5;
+
+          img {
+              width: 100%;
+              // transform: scale(2.0);
+              max-height: 800px;
+              object-fit: cover;  
+          }
+      }
+  }
+  .right{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: white;
+      margin-top: 125px;
+      .priceAndQuantity {
+          margin-top: -60px;
+
+          .quantity {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              font-size: 40px;
+              height: 50px;
+          
+              
+              .quantityButton {
+                  border-style: solid;
+                  border:white;
+                  background-color: black;
+                  width: 50px;
+                  height: 50px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  cursor: pointer;
+                  border: none;
+                  font-size: 40px;
+              }
+          }
+          .price {
+              font-family: Neue, Arial;
+              margin-top: -45px;
+              font-size: 30px;
+              color: #38ea18;
+              font-weight: 500;
+          }
+      }
+      h1 {
+          margin-left: -3px;
+          margin-top: -65px;
+          font-family: Razerf5, Helvetica;
+          text-transform: uppercase;
+          font-size: 60px;
+          
+      }
+      span {
+          display: flex;
+          justify-content: flex-end;
+          margin-right: 32px;
+      }
+
+      
+
+      p {
+          font-family: Neue, Arial;
+          font-size: 25px;
+          font-weight: 300;
+          text-align: justify; 
+      }
+      .desc {
+          color: rgb(156, 156, 156);
+          margin-top: -70px;
+          font-size: 30px;
+          max-width: 850px;
+      }
+
+      .cartDiv {
+          .success-message {
+              margin-top: 20px;
+              font-size: 20px;
+              font-family: Noto Sans, sans-serif;
+          }
+
+          .error-message {
+              margin-top: 20px;
+              font-size: 20px;
+              font-family: Noto Sans, sans-serif;
+          }
+          .login-prompt {
+              // position: absolute;
+              margin-top: 210px;
+              .login-buttons {
+                  display: flex;
+                  flex-direction: row;
+                  gap: 20px;
+                  
+                  .loginbutton {
+                      background-color: #39FF14;
+                      color: black;
+                      height: 60px;
+                      width: 105px;
+                      .par {
+                          margin-left: 10px;
+                          margin-top: 4px;
+                      }
+                  }
+                  .signinbutton {
+                      background-color: black;
+                      border: #38ea18;
+                      border-style: solid;
+                      height: 60px;
+                      width: 105px;
+                      .par {
+                          margin-left: 4px;
+                          margin-top: 1px;
+                      }
+                  }
+
+              }
+          }
+
+          button {
+              margin-top: -20px;
+              background-color: rgb(137, 137, 255);
+              color: white;
+              font-size: 40px;
+
+          }
+          .add {
+              width: 250px;
+              padding: 10px;
+              background-color: #39FF14;
+              color: black;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 20px;
+              cursor: pointer;
+              border: none;
+              font-weight: 500;
+              
+              .cartIcon {
+                  font-size: 30px;
+                  margin-left: 18px;
+              }
+              span {
+                  font-size: 25px;
+                  margin-left: -10px;
+              }
+          }
+      }
+  }
+
+  h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .login-error {
+      color: red;
+      margin-bottom: 10px;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .input-container {
+      margin-bottom: 10px;
+    }
+    
+    label {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    
+    input {
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    
+    button {
+      padding: 10px 20px;
+      font-family: Neue, Arial, sans-serif;
+      font-size: 16px;
+      background-color: #337ab7;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #286090;
+    }
+}

@@ -1,0 +1,148 @@
+@font-face {
+  font-family: RazerF5;
+  src: url(assets/RazerF5-Bold.otf);
+}
+
+@font-face {
+  font-family: Neue;
+  src: url(assets/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: Noto Sans;
+  src: url(assets/NotoSans-Regular.ttf);
+}
+.login-container {
+  font-family: "Noto Sans", Arial, sans-serif;
+  color: #333;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url(assets/bg.png);
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  
+
+  .loginPage {
+      background-image: url(assets/bgleft.jpg);
+      width: 1057px;
+      margin-left: 2px;
+      margin-top: 25px;
+      background-color: black;
+      height: 700px;
+      padding: 20px 50px 30px;
+      box-shadow: 0px 1px 46px -6px rgba(57,255,20,1);
+      -webkit-box-shadow: 0px 1px 46px -6px rgba(57,255,20,1);
+      -moz-box-shadow: 0px 1px 46px -6px rgba(57,255,20,1);
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+
+      .loginPageLeft {
+          margin-top: 270px;
+          margin-left: 70px;
+          width: 350px;
+          justify-content: center;
+          align-items: center;
+
+          .errorMessage {
+              font-family: Neue, Arial;
+              letter-spacing: 2px;
+              color: rgb(205, 0, 0);
+          }
+          
+          button {
+              height: 40px;
+              width: 307px;
+
+              p {
+                  font-size: 25px;
+                  margin-top: -5px;
+              }
+          }
+          span {
+              color: white;
+              font-family: Noto sans, sans-serif;
+              display: flex;
+              margin-left: 70px;
+              margin-top: 5px;
+          }
+
+          .toSignup {
+              margin-left: -72px;
+              button {
+                  background-color: black;
+                  color: white;
+                  border-color: #39FF14;
+                  border-style: solid;
+              }
+              p {
+                  margin-top: -8px;
+              }
+              .signupbutton {
+                  font-size: 25px;
+                  margin-top: 10px;
+              }
+
+              button:hover {
+                  background-color: #0b2a05;
+                }
+          }
+
+          
+
+      }
+      .loginPageRight {
+          width: 700px;
+          display: flex;
+          img {
+              height: 750px;
+              margin-top: -20px;
+              margin-left: 1px;
+          }
+      }
+  }
+
+  .loginForm {
+      margin-left: -73px;
+      margin-right: 40px;
+      font-family: Neue, Arial;
+      letter-spacing: 2px;
+
+      label {
+          color: white;
+          font-size: 20px;
+      }
+
+      input {
+          max-width: 199px;
+          margin-left: 5px;
+          border: none;
+          border-bottom: 1px solid #ffffff;
+          border-radius: 0px;
+          background-color: transparent;
+          font-size: 20px;
+          outline: none;
+          color: white;
+          font-family: Noto Sans, sans-serif;
+      }
+  }
+
+  h2 {
+      font-family: Neue, Arial;
+      letter-spacing: 2px;
+      text-align: center;
+      font-size: 35px;
+      margin-top: 13px;
+  }
+  
+  button {
+      background-color: #39FF14;
+      color: black;
+  }
+
+  button:hover {
+      background-color: #2aba11;
+    }
+}
+

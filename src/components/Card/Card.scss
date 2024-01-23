@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Neue;
+    src: url(assets/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: Noto Sans;
+    src: url(assets/NotoSans-Regular.ttf);
+}
+.card {
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+    background-color: black;
+    box-shadow: 0px 1px 10px 0px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(255,255,255,0.75);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(255,255,255,0.75);
+    // color: white;
+    &:hover {
+        filter: drop-shadow(0px 0px 16px rgba(255, 255, 255, 0.8));
+      }
+    .image {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+        span {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: #39FF14;
+            color: black;
+            padding: 3px;
+            z-index: 3;
+            // font-weight: 500;
+            font-size: 15px;
+            letter-spacing: 1px;
+            font-family: Razerf5, helvetica;
+            box-shadow: 10px 10px 19px -2px rgba(68,214,44,0.66);
+            -webkit-box-shadow: 10px 10px 19px -2px rgba(68,214,44,0.66);
+            -moz-box-shadow: 10px 10px 19px -2px rgba(68,214,44,0.66);
+        }
+    }
+
+    .itemchar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        h2 {
+            font-family: RazerF5, sans-serif;
+            font-size: 20px;
+            margin-bottom: 1px;
+          }
+    
+        h3 {
+            font-family: Noto Sans, sans-serif;
+            font-size: 14px;
+            color: gray;
+          }
+    
+        .prices {
+            font-family: Neue, Arial;
+            font-size: 18px;
+            font-weight: bold;
+          }
+    }
+}

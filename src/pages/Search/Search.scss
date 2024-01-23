@@ -1,0 +1,43 @@
+@font-face {
+  font-family: RazerF5;
+  src: url(assets/RazerF5-Bold.otf);
+}
+
+@font-face {
+  font-family: Neue;
+  src: url(assets/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: Noto Sans;
+  src: url(assets/NotoSans-Regular.ttf);
+}
+
+.search {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 90px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .search-input {
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+
+  .search-button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #37e318;
+    color: black;
+    font-weight: 500;
+    font-family: RazerF5, Helvetica;
+  }
+}

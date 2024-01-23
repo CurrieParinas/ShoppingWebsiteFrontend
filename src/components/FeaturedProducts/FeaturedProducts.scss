@@ -1,0 +1,42 @@
+@font-face {
+    font-family: RazerF5;
+    src: url(assets/RazerF5-Bold.otf);
+}
+@font-face {
+    font-family: Neue;
+    src: url(assets/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: Noto Sans;
+    src: url(assets/NotoSans-Regular.ttf);
+}
+.featuredProducts{
+    margin: 100px 200px;
+    color: white;
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;        
+    }
+    
+    h1 {
+        flex: 2;
+        font-family: Neue, Arial;
+        letter-spacing: 5px;
+        text-transform: capitalize;
+    }
+
+    p {
+        flex: 3;
+        color: gray;
+        font-family: Noto sans, sans-serif;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+}

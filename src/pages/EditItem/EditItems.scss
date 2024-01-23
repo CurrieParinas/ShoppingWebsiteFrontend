@@ -1,0 +1,120 @@
+.edititem {
+  background-color: black;
+  min-height: 900px;
+  background-image: url(./assets/6.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  .cont {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      
+  }
+  .left {
+      margin-top: 100px;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 240px;
+      font-family: Neue, Arial;
+      letter-spacing: 3px;
+      h2 {
+          color: white;
+          font-size: 50px;
+      }
+  }
+  .editmain {
+      color: white;
+      display: flex;
+      justify-content: flex-end;
+      .edititemsub {
+          width: 310px;
+          margin-right: 180px;
+          .entitiesedititems {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+              font-family: Noto Sans, sans-serif;
+              .pic {
+                  input {
+                      margin-left: 40px;
+                  }
+              }
+              .itemname {
+                  input {
+                      margin-left: 8px;
+                  }
+              }
+              .categ {
+                  input {
+                      margin-left: 24.5px;
+                  }
+              }
+              .desc {
+                  input {
+                      margin-left: 6.5px;
+                  }
+              }
+              .price {
+                  input {
+                      margin-left: 55.5px;
+                  }
+              }
+              .stock {
+                  input {
+                      margin-left: 44.5px;
+                  }
+              }
+              input {
+                  text-align: center;
+                  padding: 8px;
+                  border: none;
+                  border-bottom: 1px solid #ffffff;
+                  border-radius: 0px;
+                  background-color: transparent;
+                  font-size: 15px;
+                  outline: none;
+                  color: white;
+                  font-family: Noto Sans, sans-serif;
+                  width: 197px;
+                }
+              .updbut {
+                  
+                  button {
+                      width: 100%;
+                      background-color: #39FF14;
+                      color: black;
+                      height: 40px;
+
+                      p {
+                          font-size: 25px;
+                          margin-top: -5px;
+                          color: black;
+                      }
+                  }
+                  button:hover {
+                      background-color: #2aba11;
+                  }
+              }
+              .backtosom {
+                  button {
+                      height: 40px;
+                      width: 100%;
+                      background-color: black;
+                      color: white;
+                      border-color: #39FF14;
+                      border-style: solid;
+                      p {
+                          font-size: 24px;
+                          margin-top: -7px;
+                          color: white;
+                      }
+                  }    
+                  button:hover {
+                     
+                      background-color: #0b2a05;
+                    }
+              }
+          }
+      }
+  }
+}

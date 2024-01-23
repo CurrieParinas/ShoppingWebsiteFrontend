@@ -1,0 +1,120 @@
+@font-face {
+    font-family: RazerF5;
+    src: url(assets/RazerF5-Bold.otf);
+  }
+  
+  @font-face {
+    font-family: Neue;
+    src: url(assets/BebasNeue-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Noto Sans;
+    src: url(assets/NotoSans-Regular.ttf);
+  }
+  .signup-container {
+    padding: 20px;
+    background-image: url(../Login/assets/bg.png);
+    padding-bottom: 45px;
+    .signupsubcon {
+        background-image: url(../Login/assets/bgleft.jpg);
+        color: white;
+        margin-top: 25px;
+        background-color: black;
+        height: 700px;
+        width: 1058px;
+        margin-left: 356px;
+        padding: 20px 50px 30px;
+        box-shadow: 0px 1px 46px -6px rgba(57,255,20,1);
+        -webkit-box-shadow: 0px 1px 46px -6px rgba(57,255,20,1);
+        -moz-box-shadow: 0px 1px 46px -6px rgba(57,255,20,1);
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        .signupLeft {
+            margin-top: 110px;
+            margin-left: 70px;
+            width: 350px;
+            justify-content: center;
+            align-items: center;
+            label {
+                font-family: Noto Sans, Arial;
+                font-size: 12px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: rgb(255, 255, 255);
+            }
+            button {
+                height: 40px;
+                width: 307px;
+                background-color: #39FF14;
+                color: black;
+    
+                p {
+                    margin-left: -6px;
+                    font-size: 25px;
+                    margin-top: -5px;
+                }
+            }
+
+            button:hover {
+                background-color: #248f11;
+            }
+            select {
+                font-family: Noto Sans, sans-serif;
+            }
+        }
+        .signupRight {
+            img {
+                height: 750px;
+                margin-top: -20px;
+                margin-left: 31px;
+            }
+        }
+      
+        h2 {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      
+        form {
+          display: flex;
+          flex-direction: column;
+      
+          .input-container {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+      
+            label {
+              margin-bottom: 5px;
+            }
+      
+            input {
+                padding: 8px;
+                border: none;
+                border-bottom: 1px solid #ffffff;
+                border-radius: 0px;
+                background-color: transparent;
+                font-size: 20px;
+                outline: none;
+                color: white;
+                font-family: Noto Sans, sans-serif;
+              }
+          }
+          .dropdown-button {
+            width: 100%;
+            height: 40px;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: #555;
+            appearance: none;
+            cursor: pointer;
+          }
+        }
+    }
+  }
+  

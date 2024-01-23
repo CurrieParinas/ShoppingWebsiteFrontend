@@ -1,0 +1,214 @@
+@font-face {
+    font-family: RazerF5;
+    src: url(assets/RazerF5-Bold.otf);
+}
+@font-face {
+    font-family: Neue;
+    src: url(assets/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: Noto Sans;
+    src: url(assets/NotoSans-Regular.ttf);
+}
+.checkout-container {
+    min-height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:chocolate;
+    background-image: url(../Login/assets/bgleft.jpg);
+    padding-bottom: 50px;
+    .checkout {
+        display: flex;
+        align-items: center;
+        min-height: 1000px;
+        background-color: black;
+        color: white;
+        width: 1800px;
+        margin-top: 30px;
+        flex-direction: column;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 65px -7px rgba(0,197,0,1);
+        -webkit-box-shadow: 0px 0px 65px -7px rgba(0,197,0,1);
+        -moz-box-shadow: 0px 0px 65px -7px rgba(0,197,0,1);
+        .checkoutword {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 90px;
+            font-family: Razerf5, Helvetica;
+            font-size: 50px;
+            background-color: black;
+            position: sticky;
+            top: 0;
+            width: 1800px;
+        }
+        .col1 {
+            min-height: 600px;
+            width: 1200px;
+            border-top: 1px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .noItemsCheckout {
+                font-family: Razerf5, Helvetica;
+                font-size: 20px;
+            }
+            .checkout-items {
+                width: 100%;
+                .item {
+                    margin: 20px;
+                    height: 200px;
+                    display: flex;
+                    flex-direction: row;                    
+                    .item-details {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        .itemname {
+                            margin-left: 10px;
+                            min-width: 800px;
+                            // margin-right: 270px;
+                            // margin-top: 25px;
+                            font-size: 20px;
+                            font-family: Razerf5, Helvetica;
+                        }
+                        .itemquantity {
+                            min-width: 100px;
+                            font-family: Noto Sans, sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+        .col2 {
+            margin-bottom: 20px;
+            .entities {
+                width: 1200px;
+                border-top: 1px solid gray;
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                .div1 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    height: 150px;
+                    width: 300px;
+                    .pmn {
+                        font-family: Neue, sans-serif;
+                        font-size: 25px;
+                        letter-spacing: 2px;
+                    }
+                    select {
+                        appearance: none;
+                        width: 160px;
+                        height: 25px;
+                        margin-bottom: -10px;
+                    }
+                    .optiondd {
+                        margin-top: -10px;
+                        .bank {
+                            margin-left: 20px;
+                            margin-bottom: 7px;
+                        }
+                        .acc {
+                            margin-left: 11px;
+                        }
+                        label {
+                            margin-left: -20px;
+                            font-size: 15px;
+                            font-family: Noto Sans, sans-serif;
+                        }
+                    }
+                    .select-wrapper {
+                        position: relative;
+                        width: 200px;
+                        margin: 0 auto;
+                        
+                        }
+
+                        .select-wrapper select {
+                        width: 100%;
+                        // padding: 1px;
+                        border: none;
+                        border-radius: 4px;
+                        background-color: #f5f5f5;
+                        color: black;
+                        font-size: 16px;
+                        appearance: none;
+                        
+                        }
+
+                        .select-wrapper select:focus {
+                        outline: none;
+                        box-shadow: 0 0 0 2px #39FF14;
+                        }
+                }
+                .div2 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 150px;
+                    width: 300px;
+                    flex-direction: column;
+                    .subtotal {
+                        font-family: Neue, Arial;
+                        font-size: 25px;
+                        margin-bottom: 5px;
+                    }
+                    button {
+                        background-color: #39FF14;
+                        color: black;
+                        font-size: 20px;
+                        height: 45px;
+                        width: 180px;
+                    }
+                    .error {
+                        font-family: Noto Sans, sans-serif;
+                    }
+                } 
+                .div3 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 150px;
+                    width: 300px;
+                    .shippingdiv {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+                    label {
+                        font-family: Neue, Arial;
+                        font-size: 25px;
+                        letter-spacing: 1px;
+                    }
+                    
+                } 
+            }
+            .toprod {
+                display: flex;
+                justify-content: flex-end;
+                .toprodbut {
+                    margin-right: -280px;
+                }
+                button {
+                    border: 1px solid #39FF14;
+                    background-color: black;
+                    color: white;
+                    height: 45px;
+                    width: 180px;
+                }
+                button:hover {
+                    background-color: #29b611;
+                }
+            }
+        }
+    }
+}

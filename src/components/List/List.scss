@@ -1,0 +1,9 @@
+.list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .temp {
+        font-size: 200px;
+        color: white;
+    }
+}

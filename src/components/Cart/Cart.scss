@@ -1,0 +1,286 @@
+@font-face {
+    font-family: RazerF5;
+    src: url(assets/RazerF5-Bold.otf);
+}
+@font-face {
+    font-family: Neue;
+    src: url(assets/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: Noto Sans;
+    src: url(assets/NotoSans-Regular.ttf);
+}
+.cart{
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    z-index: 999;
+    background-color: black;
+    padding: 20px;
+    margin-top: -20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-shadow: -12px 14px 35px -10px rgba(0,197,0,1);
+    -webkit-box-shadow: -12px 14px 35px -10px rgba(0,197,0,1);
+    -moz-box-shadow: -12px 14px 35px -10px rgba(0,197,0,1);
+
+    .notlogged {
+        max-width: 500px;
+        max-height: 100px;
+        margin-bottom: -15px;
+        p {
+            color: white;
+        }
+        .parpar {
+            margin-top: 2px;
+        }
+        .notloggedbuttons {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 20px;
+            button {
+                height: 50px;
+                width: 100px;
+            }
+            .log {
+                button {
+                    background-color: #37e318;
+                    color: black;
+                    text-transform: uppercase;
+                    font-family: Neue, Arial;
+                    font-size: 30px;
+                }
+                
+                button:hover {
+                    background-color: #2aac13;
+                }
+            }
+            span {
+                color: white;
+                display: flex;
+                font-size: 25px;
+                margin-top: 8px;
+
+            }
+            .sign {
+                button {
+                    background-color: black;
+                    border: 4px solid #37e318;
+                    text-transform: uppercase;
+                    font-family: Neue, Arial;
+                    font-size: 30px;
+                    color: white;
+                }
+                
+                button:hover {
+                    background-color: #144809;
+                }
+            }
+        }
+    }
+
+    .logged {
+        min-width: 400px;
+        margin-bottom: -40px;
+        margin-right: -15px;
+        .total {
+            color: white;
+            font-size: 25px;
+            margin-bottom: -10px;
+            .subtotal {
+                margin-right: 25px;
+            }
+        }
+        .cartTitle {
+            text-transform: uppercase;
+        }
+        .noItems {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .bottombuttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            button {
+                height: 40px;
+                width: 200px;
+            }
+
+            .toReset {
+                button {
+                    background-color: black;
+                    border: 1px solid red;
+                }
+
+                button:hover {
+                    background-color: rgb(131, 131, 131);
+                    color: black;
+                }
+            }
+            .toCheckout {
+                button {
+                    background-color: #37e318;
+                    color: black;
+                }
+
+                button:hover {
+                    background-color: #2aac13;
+                    color: black;
+                }
+            }
+        }
+
+        .listofitem {
+            .item {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                img {
+                    height: 85px;
+                    margin-top: 5px;
+                }
+                .details {
+                    .itemTitle {
+                        margin-top: 20px;
+                        font-family: Razerf5, Helvetica;
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        
+                    }
+                    .buttons {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+                        margin-top: 10px;
+                        .amount {
+                            color: white;
+                            margin-top: 5px;
+                        }
+
+                        button {
+                            height: 30px;
+                            width: 30px;
+                            background-color: #37e318;
+                            color: black;
+                        }
+                        button:hover {
+                            background-color: #2aac13;
+                        }
+
+                    }
+                    .price {
+                        color: white;
+                        font-family: Noto Sans, sans-serif;
+                    }
+                }
+            }
+            .deleteIcon {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                
+                .delete {
+                    margin-right: 15px;
+                    margin-top: -135px;
+                    display: flex;
+                    align-items: center;
+                    color: red;
+                    font-size: 30px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+    h1{
+        margin-bottom: 30px;
+        color: gray;
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+
+        img {
+            width: 80px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .details{
+            font-family: Noto Sans, sans-serif;
+            h1{
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            p{
+                color: gray;
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+            .price {
+                color: #2879fe;
+            }
+        }
+
+        
+        .quantity {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: black;
+      
+            button {
+              width: 50px;
+              height: 50px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              border: none;
+            }
+        }
+    }
+
+    .total {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: black;
+        font-family: Neue, Arial;
+    }
+
+    button {
+        width: 250px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        cursor: pointer;
+        border: none;
+        background-color: #2879fe;
+        color: white;
+        font-weight: 500;
+        margin-bottom: 20px;
+        font-family: RazerF5, Helvetica;
+    }
+
+    .reset {
+        color:red;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .toCheckout {
+        margin: 20px;
+    }
+}
